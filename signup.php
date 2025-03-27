@@ -25,12 +25,13 @@ $skills = getEnumValues('skills', 'users');
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Sign Up - ReachOut World Media Network</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
-    <link rel="stylesheet" href="signup.css">
+    <link rel="stylesheet" href="styles/login.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
     <link href="https://cdnjs.cloudflare.com/ajax/libs/video.js/7.14.3/video-js.min.css" rel="stylesheet">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/sweetalert2@11/dist/sweetalert2.min.css">
 </head>
 <body>
+    <?php include_once 'includes/header.php'; ?>
     <div class="login-container">
         <h2 class="login-title">Create Your Account</h2>
 

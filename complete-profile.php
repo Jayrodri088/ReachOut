@@ -18,7 +18,11 @@ if (!isset($_SESSION['pending_google_user']) && !isset($_SESSION['pending_kc_use
 }
 $pendingUser = $_SESSION['pending_google_user'] ?? $_SESSION['pending_kc_user'] ?? $_SESSION['pending_twitter_user'];
 $email = $pendingUser['email'];
-error_log('Pending KC User: ' . print_r($_SESSION['pending_kc_user'], true));
+
+// Only log if the pending_kc_user is set
+if (isset($_SESSION['pending_kc_user'])) {
+    error_log('Pending KC User: ' . print_r($_SESSION['pending_kc_user'], true));
+}
 
 if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     // Updated required fields to include password and confirm_password
@@ -104,7 +108,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Complete Profile - ReachOut World Media Network</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
-    <link rel="stylesheet" href="signup.css">
+    <link rel="stylesheet" href="styles/signup.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/sweetalert2@11/dist/sweetalert2.min.css">
 </head>
