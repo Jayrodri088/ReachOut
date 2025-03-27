@@ -17,7 +17,7 @@ define('DB_PASS', '');             // Change this to your database password
 
 // Site configuration
 define('SITE_NAME', 'ReachOut World Media Network');
-define('SITE_URL', 'http://localhost/ROWMN Portal'); // Change to your actual domain
+define('SITE_URL', 'http://localhost/rowmn'); // Change to your actual domain
 
 // File paths
 define('ROOT_PATH', dirname(__DIR__) . '/');
