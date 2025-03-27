@@ -49,6 +49,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
 </head>
 
 <body>
+    <?php include_once 'includes/header.php'; ?>
     <div class="login-container">
         <h2 class="login-title">Welcome Back</h2>
 
