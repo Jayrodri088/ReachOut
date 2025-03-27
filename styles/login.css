@@ -29,7 +29,7 @@ body {
     width: 100%;
     max-width: 600px;
     padding: 2.5rem;
-    margin: 20px auto; /* Centered with auto margins */
+    margin: 100px auto 20px auto; /* Increased top margin to account for header */
     background: rgba(255, 255, 255, 0.95);
     border-radius: 15px;
     box-shadow: 0 8px 32px rgba(0, 0, 0, 0.1);
@@ -193,7 +193,7 @@ body {
   
   @media (max-width: 768px) {
     .login-container {
-      margin: 20px;
+      margin: 100px 20px 20px 20px; /* Added top margin for header */
       padding: 1.5rem;
     }
   
@@ -213,7 +213,7 @@ body {
   
   @media (max-width: 576px) {
     .login-container {
-      margin: 10px;
+      margin: 100px 10px 10px 10px; /* Added top margin for header */
       padding: 1rem;
     }
   
@@ -226,4 +226,3 @@ body {
       padding: 10px 15px;
     }
   }
-  
